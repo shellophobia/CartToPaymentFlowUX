@@ -1,0 +1,298 @@
+/************************************  Common CSS **********************************/
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color: #434343;
+}
+
+button, input[type="submit"] {
+  font-family: 'Open Sans', sans-serif;
+  outline: 0;
+  background: #fff;
+  cursor: pointer;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+a {
+  color: #636363;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+input[type="text"], input[type="number"] {
+  border: 0;
+  border-bottom: 2px solid #ccc;
+  padding: 0.3em 0.5em !important;
+  outline: 0;
+  font-size: 1em;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+  border-bottom-color: #2e8cae;
+}
+
+input[type="number"]::-webkit-inner-spin-button, .quant-val::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="text"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+}
+input[type="text"]::-moz-placeholder, input[type="number"]::moz-placeholder { /* Firefox 19+ */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+}
+input[type="text"]:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder { /* IE 10+ */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+}
+input[type="text"]:-moz-placeholder, input[type="text"]:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+}
+
+/******************** Utiltiy Classes **************************************/
+.row {
+  margin-bottom: 2em;
+}
+
+.row:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.row .col {
+  float: left;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+}
+
+.row .col.s1 {
+  width: 8.33%;
+}
+
+.row .col.s2 {
+  width: 16.66%;
+}
+
+.row .col.s3 {
+  width: 25%;
+}
+
+.row .col.s4 {
+  width: 33.33%;
+}
+
+.row .col.s5 {
+  width: 41.66%;
+}
+
+.row .col.s6 {
+  width: 50%;
+}
+
+.row .col.s7 {
+  width: 58.33%;
+}
+
+.row .col.s8 {
+  width: 66.66%;
+}
+
+.row .col.s9 {
+  width: 75%;
+}
+
+.row .col.s10 {
+  width: 83.33%;
+}
+
+.row .col.s11 {
+  width: 91.66%;
+}
+
+.row .col.s12 {
+  width: 100%;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.border-e {
+  border: 1px solid #eee;
+}
+
+.border-r-e {
+  border-right: 1px solid #eee;
+}
+
+.border-b-e {
+  border-bottom: 1px solid #eee;
+}
+
+.p-b-1 {
+  padding-bottom: 1em;
+}
+
+.m-b-1 {
+  margin-bottom: 1em;
+}
+
+.m-t-1 {
+  margin-top: 1em;
+}
+
+.m-l-05 {
+  margin-left: 0.5em;
+}
+
+.small {
+  font-size: 0.9em;
+}
+
+.medium {
+  font-size: 0.95em;
+}
+
+.large {
+  font-size: 1.2em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-blue {
+  color: #2E8CAE;
+}
+
+.u-case {
+  text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-space {
+  justify-content: space-between;
+}
+
+.flex-column-center {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes bounce-in {
+  0% {
+    top: -10em;
+  }
+  
+  95% {
+    top: 0.7em;
+  }
+  
+  100% {
+    top: 0.3em;
+  }
+}
+
+.toast-message {
+  position: fixed;
+  top: -10em;
+  background: #2e8cae;
+  color: #fff;
+  padding: 0.2em 5em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.toast-message.visible {
+  animation: bounce-in 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  top: 0.3em;
+}
+
+.btn {
+  outline: 0;
+  background: #2e8cae;
+  color: #fff;
+  border: 1px solid #2e8cae;
+}
+
+.btn:hover {
+  background: #2e8cef;
+}
+
+.buy-step {
+  padding: 0.5em 1em;
+  background: #fff;
+  color: #2e8cae;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #2e8cae;
+}
+
+.buy-step[data-disabled="true"]:hover {
+  text-decoration: none;
+  cursor: default;
+}
+
+.buy-step.current {
+  background: #2e8cae;
+  color: #fff;
+}
+
+.separator {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10%;
+  margin: 0 1em;
+  border: 1px solid #eee;
+}

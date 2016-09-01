@@ -1,0 +1,179 @@
+.shipping-card {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #ddd;
+  position: relative;
+  background: #efefef;
+}
+
+.icon-holder {
+  position: absolute;
+  font-size: 1.3em;
+  top: 0;
+  right: 0;
+}
+
+.icon-holder .fa {
+  padding: 0.3em;
+  color: #222;
+}
+
+.icon-holder .fa:hover {
+  text-decoration: none;
+}
+
+.btn-deliver {
+  width: 100%;
+  padding: 0.3em 0.5em;
+}
+
+.modal-overlay {
+  position: fixed;
+  background: #000;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.address-book-modal {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  padding: 1em;
+  top: 40%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+
+.add-address input {
+  width: 80%;
+  padding: 0.3em 0.5em;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #999;
+}
+
+.add-address input:focus {
+  border-bottom: 2px solid #2e8cae;
+}
+
+.btn-add-address {
+  padding: 1em;
+  width: 30em;
+}
+
+.payment-options {
+  width: 80%;
+  margin: 0 auto;
+  border-right: 1px solid #eee;
+}
+
+.nav-tab a {
+  padding: 0.7em 1em;
+  display: block;
+  background: #eee;
+  color: #2e8cae;
+  border-bottom: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
+
+.nav-tab:first-child {
+  border-top: 1px solid #aaa;
+}
+
+.nav-tab.active a {
+  background: #fff;
+  border-left: 5px solid;
+  border-right: 0;
+}
+
+.nav-tab a:hover {
+  text-decoration: none;
+}
+
+.payment-option {
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+}
+
+.payment-option.active {
+  visibility: visible;
+}
+
+.card-holder {
+  padding: 0.5em;
+  border: 1px solid #dedede;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.card-holder:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+.card-holder.selected {
+  border-color: #ccc;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.cvv-field {
+  width: 10%;
+  margin: 0 10px;
+}
+
+input[type="submit"].btn {
+  background: #70ad4d;
+  border-color: #70ad4d;
+  font-size: 1em;
+  padding: 0.7em 3em;
+  cursor: pointer;
+}
+
+input[type="submit"].btn:hover {
+  background: #70bd4d;
+}
+
+.slash {
+  position: absolute;
+  font-size: 1.5em;
+}
+
+.btn.btn-otp {
+  padding: 0.3em 0.5em;
+  margin-left: 5em;
+}
+
+.saved-card .card-holder.selected + .fa {
+  top: -5px;
+  font-size: 1.2em;
+  right: 0;
+  display: block;
+  position: absolute;
+}
+
+.saved-card .fa {
+  display: none;
+}
+
+.bank-name {
+  padding: 1em;
+  background: #f5f5f5;
+  margin-bottom: 1em;
+}
+
+.add-address-form input {
+  width: 80%;
+  font-size: 0.9em;
+  border-bottom-width: 1px;
+}
+
+.btn[name="deliver"] {
+  padding: 0.7em 4em;
+  margin-top: 1em;
+}
